@@ -1,2 +1,0 @@
-webpackJsonp([23375543687692],{406:function(t,o){t.exports={data:{book:{id:"/home/k/utvikling/gatsby-library/src/pages/books/dat159/iot/IEEEACCESS-07113786.pdf absPath of file [cbfed6e5bfae65078d6739119c582e71] >>> pdf",title:"dat159/iot/IEEEACCESS-07113786",author:"Unknown",pageCount:"31",downloadPath:"/pdf/dat159/iot/IEEEACCESS-07113786.pdf",fingerprint:"cbfed6e5bfae65078d6739119c582e71"}},pathContext:{path:"/books/dat159/iot/IEEEACCESS-07113786/"}}}});
-//# sourceMappingURL=path---books-dat-159-iot-ieeeaccess-07113786-72bcb6a3c2f6c7b269eb.js.map

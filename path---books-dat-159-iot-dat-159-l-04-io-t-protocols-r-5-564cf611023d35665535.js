@@ -1,2 +1,0 @@
-webpackJsonp([78262160919640],{403:function(o,a){o.exports={data:{book:{id:"/home/k/utvikling/gatsby-library/src/pages/books/dat159/iot/DAT159_L04_IoTProtocols_r5.pdf absPath of file [058543ba8786af4cba10fa3716205d34] >>> pdf",title:"Slide 1",author:"Lars Michael Kristensen",pageCount:"36",downloadPath:"/pdf/dat159/iot/DAT159_L04_IoTProtocols_r5.pdf",fingerprint:"058543ba8786af4cba10fa3716205d34"}},pathContext:{path:"/books/dat159/iot/DAT159_L04_IoTProtocols_r5/"}}}});
-//# sourceMappingURL=path---books-dat-159-iot-dat-159-l-04-io-t-protocols-r-5-564cf611023d35665535.js.map

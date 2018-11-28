@@ -1,2 +1,0 @@
-webpackJsonp([0xf14f3a97a9f6],{413:function(f,e){f.exports={data:{book:{id:"/home/k/utvikling/gatsby-library/src/pages/books/dat159/refactoring/Ribeiro_ifdefs.pdf absPath of file [0d5758eefe1db3073f3995f5692928f9] >>> pdf",title:"Noruega.key",author:"Unknown",pageCount:"48",downloadPath:"/pdf/dat159/refactoring/Ribeiro_ifdefs.pdf",fingerprint:"0d5758eefe1db3073f3995f5692928f9"}},pathContext:{path:"/books/dat159/refactoring/Ribeiro_ifdefs/"}}}});
-//# sourceMappingURL=path---books-dat-159-refactoring-ribeiro-ifdefs-f0b8691e41c2c9131ff3.js.map

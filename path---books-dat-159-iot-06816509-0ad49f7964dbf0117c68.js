@@ -1,2 +1,0 @@
-webpackJsonp([1850817323532],{396:function(t,a){t.exports={data:{book:{id:"/home/k/utvikling/gatsby-library/src/pages/books/dat159/iot/06816509.pdf absPath of file [4f15ad3d54566a3b8fd12218a42446fb] >>> pdf",title:"untitled",author:"Unknown",pageCount:"5",downloadPath:"/pdf/dat159/iot/06816509.pdf",fingerprint:"4f15ad3d54566a3b8fd12218a42446fb"}},pathContext:{path:"/books/dat159/iot/06816509/"}}}});
-//# sourceMappingURL=path---books-dat-159-iot-06816509-0ad49f7964dbf0117c68.js.map
