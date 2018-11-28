@@ -1,0 +1,2 @@
+webpackJsonp([77614069642604],{398:function(e,f){e.exports={data:{book:{id:"/home/travis/build/181192/exre-site/src/pages/books/dat159/refactoring/os-ecref-pdf.pdf absPath of file [1734d78121f9f8bdcf0b733ac1cd80db] >>> pdf",title:"dat159/refactoring/os-ecref-pdf",author:"Unknown",pageCount:"19",downloadPath:"/exre-site/pdf/dat159/refactoring/os-ecref-pdf.pdf",fingerprint:"1734d78121f9f8bdcf0b733ac1cd80db"}},pathContext:{path:"/books/dat159/refactoring/os-ecref-pdf/"}}}});
+//# sourceMappingURL=path---books-dat-159-refactoring-os-ecref-pdf-e9c81001cadae0026277.js.map
