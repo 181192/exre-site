@@ -28,7 +28,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
                     )[2];
                     const fallbackName = downloadPath.replace(/\.pdf$/, '');
 
-                    metadata.downloadPath = `/pdf/${downloadPath}`;
+                    metadata.downloadPath = `/exre-site/pdf/${downloadPath}`;
                     metadata.title = data.meta.info.Title || fallbackName;
                     metadata.author = data.meta.info.Author || 'Unknown';
                     metadata.pageCount = (data.pdfInfo.numPages || 0).toString();
