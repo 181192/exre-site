@@ -1,10 +1,10 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import { Helmet } from 'react-helmet';
+import React from 'react'
+import Link from 'gatsby-link'
+import { Helmet } from 'react-helmet'
 
-import { rhythm } from '../utils/typography';
+import { rhythm } from '../utils/typography'
 
-import * as styles from './Layout.css';
+import * as styles from './Layout.css'
 
 export default ({ children, data }) => (
   <div>
@@ -21,7 +21,7 @@ export default ({ children, data }) => (
 
     {children()}
   </div>
-);
+)
 
 export const query = graphql`
   query LayoutQuery {
@@ -31,4 +31,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

@@ -1,130 +1,127 @@
-import React, { Component } from 'react';
-import Link from 'gatsby-link';
-import PDFJS from 'pdfjs-dist';
-import classNames from 'classnames';
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
+import PDFJS from 'pdfjs-dist'
+import classNames from 'classnames'
 
-import * as styles from './ViewBook.css';
+import * as styles from './ViewBook.css'
 
 if (typeof window !== 'undefined') {
-  window.PDFJS = PDFJS;
-  window.PDFJS.workerSrc = '/pdf.worker.js';
+  window.PDFJS = PDFJS
+  window.PDFJS.workerSrc = '/pdf.worker.js'
 }
 
 export default class ViewBook extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       page: this.getInitialPageCount(),
-      fullscreen: false
-    };
+      fullscreen: false,
+    }
 
-    this.nextPage = this.nextPage.bind(this);
-    this.prevPage = this.prevPage.bind(this);
-    this.navigate = this.navigate.bind(this);
-    this.toggleFullscreen = this.toggleFullscreen.bind(this);
+    this.nextPage = this.nextPage.bind(this)
+    this.prevPage = this.prevPage.bind(this)
+    this.navigate = this.navigate.bind(this)
+    this.toggleFullscreen = this.toggleFullscreen.bind(this)
   }
 
   getInitialPageCount() {
     if (typeof window !== 'undefined' && window.localStorage) {
-      const fingerprint = this.props.data.book.fingerprint;
-      return +window.localStorage.getItem(`currentPage:${fingerprint}`) || 1;
+      const fingerprint = this.props.data.book.fingerprint
+      return +window.localStorage.getItem(`currentPage:${fingerprint}`) || 1
     }
   }
 
   storeCurrentPage() {
     if (typeof window !== 'undefined' && window.localStorage) {
-      const fingerprint = this.props.data.book.fingerprint;
-      window.localStorage.setItem(
-        `currentPage:${fingerprint}`,
-        this.state.page
-      );
+      const fingerprint = this.props.data.book.fingerprint
+      window.localStorage.setItem(`currentPage:${fingerprint}`, this.state.page)
     }
   }
 
   toggleFullscreen() {
-    this.setState({ fullscreen: !this.state.fullscreen });
+    this.setState({ fullscreen: !this.state.fullscreen })
   }
 
   nextPage() {
-    const nextPage = (this.state.page += 1);
+    const nextPage = (this.state.page += 1)
 
     if (nextPage < 1) {
-      return;
+      return
     }
 
     this.setState({
-      page: nextPage
-    });
+      page: nextPage,
+    })
   }
 
   prevPage() {
-    const nextPage = (this.state.page -= 1);
+    const nextPage = (this.state.page -= 1)
 
     if (this.state.page >= this.props.data.book.pageCount) {
-      return;
+      return
     }
 
     this.setState({
-      page: nextPage
-    });
+      page: nextPage,
+    })
   }
 
   navigate(event) {
-    const bounds = event.target.getBoundingClientRect();
-    const x = event.clientX - bounds.left;
-    const halfPoint = Math.floor(bounds.width / 2);
+    const bounds = event.target.getBoundingClientRect()
+    const x = event.clientX - bounds.left
+    const halfPoint = Math.floor(bounds.width / 2)
 
     if (x < halfPoint) {
-      this.prevPage();
+      this.prevPage()
     } else {
-      this.nextPage();
+      this.nextPage()
     }
   }
 
   componentDidMount() {
-    const loadingTask = PDFJS.getDocument(this.props.data.book.downloadPath);
+    const loadingTask = PDFJS.getDocument(this.props.data.book.downloadPath)
 
     loadingTask.promise.then(
       function(pdf) {
-        this.pdf = pdf;
+        this.pdf = pdf
 
-        this.renderPage();
+        this.renderPage()
       }.bind(this)
-    );
+    )
   }
 
   componentDidUpdate() {
-    this.renderPage();
-    this.storeCurrentPage();
+    this.renderPage()
+    this.storeCurrentPage()
   }
 
   renderPage() {
     this.pdf.getPage(this.state.page).then(function(page) {
-      const scale = 1.5;
-      const viewport = page.getViewport(scale);
+      const scale = 1.5
+      const viewport = page.getViewport(scale)
 
       // Prepare canvas using PDF page dimensions
-      const canvas = document.getElementById('book-canvas');
-      const context = canvas.getContext('2d');
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
+      const canvas = document.getElementById('book-canvas')
+      const context = canvas.getContext('2d')
+      canvas.height = viewport.height
+      canvas.width = viewport.width
 
       // Render PDF page into canvas context
       var renderContext = {
         canvasContext: context,
-        viewport: viewport
-      };
+        viewport: viewport,
+      }
 
-      page.render(renderContext);
-    });
+      page.render(renderContext)
+    })
   }
 
   render() {
-    const book = this.props.data.book;
+    const book = this.props.data.book
     const bookViewClassnames = classNames('book-view', {
-      fullscreen: this.state.fullscreen
-    });
+      fullscreen: this.state.fullscreen,
+    })
 
     return (
       <div>
@@ -168,7 +165,7 @@ export default class ViewBook extends Component {
           <canvas id="book-canvas" onClick={this.navigate} />
         </section>
       </div>
-    );
+    )
   }
 }
 
@@ -183,4 +180,4 @@ export const query = graphql`
       fingerprint
     }
   }
-`;
+`

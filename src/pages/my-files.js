@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default ({ data }) => {
   return (
@@ -25,8 +25,8 @@ export default ({ data }) => {
         </tbody>
       </table>
     </div>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query MyFilesQuery {
@@ -41,4 +41,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
