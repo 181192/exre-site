@@ -1,0 +1,192 @@
+{
+  "assetsByChunkName": {
+    "path---books-dat-159-iot-06816509": [
+      "path---books-dat-159-iot-06816509-0ad49f7964dbf0117c68.js",
+      "path---books-dat-159-iot-06816509-0ad49f7964dbf0117c68.js.map"
+    ],
+    "path---books-dat-159-iot-hvl-grid-monitoring": [
+      "path---books-dat-159-iot-hvl-grid-monitoring-17db88554a7a1819adf2.js",
+      "path---books-dat-159-iot-hvl-grid-monitoring-17db88554a7a1819adf2.js.map"
+    ],
+    "path---books-dat-159-iot-dat-159-l-03-io-t-devices-programming-r-2": [
+      "path---books-dat-159-iot-dat-159-l-03-io-t-devices-programming-r-2-bffce487224192ce086e.js",
+      "path---books-dat-159-iot-dat-159-l-03-io-t-devices-programming-r-2-bffce487224192ce086e.js.map"
+    ],
+    "path---books-dat-159-iot-iotrevhealcarwp": [
+      "path---books-dat-159-iot-iotrevhealcarwp-374172bc56f9a7bc8904.js",
+      "path---books-dat-159-iot-iotrevhealcarwp-374172bc56f9a7bc8904.js.map"
+    ],
+    "path---books-dat-159-iot-analytics-for-the-iot-survey": [
+      "path---books-dat-159-iot-analytics-for-the-iot-survey-c21bdab804e0f0b5e40f.js",
+      "path---books-dat-159-iot-analytics-for-the-iot-survey-c21bdab804e0f0b5e40f.js.map"
+    ],
+    "path---books-dat-159-iot-ieeeaccess-07113786": [
+      "path---books-dat-159-iot-ieeeaccess-07113786-72bcb6a3c2f6c7b269eb.js",
+      "path---books-dat-159-iot-ieeeaccess-07113786-72bcb6a3c2f6c7b269eb.js.map"
+    ],
+    "path---books-dat-159-iot-android-security-a-survey-of-issues-malware-penetration-and-defenses": [
+      "path---books-dat-159-iot-android-security-a-survey-of-issues-malware-penetration-and-defenses-b5084005d946b012ee92.js",
+      "path---books-dat-159-iot-android-security-a-survey-of-issues-malware-penetration-and-defenses-b5084005d946b012ee92.js.map"
+    ],
+    "path---books-dat-159-cryptography-15-reasons-not-to-start-using-pgp": [
+      "path---books-dat-159-cryptography-15-reasons-not-to-start-using-pgp-eae3d742bb38409ba166.js",
+      "path---books-dat-159-cryptography-15-reasons-not-to-start-using-pgp-eae3d742bb38409ba166.js.map"
+    ],
+    "path---books-dat-159-iot-dat-159-l-02-io-t-devices-programming-r-9": [
+      "path---books-dat-159-iot-dat-159-l-02-io-t-devices-programming-r-9-202dc8fec4007aad0c1f.js",
+      "path---books-dat-159-iot-dat-159-l-02-io-t-devices-programming-r-9-202dc8fec4007aad0c1f.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-f2d1179cd900d61a501b.js",
+      "component---src-pages-index-js-f2d1179cd900d61a501b.js.map"
+    ],
+    "path---books-dat-159-iot-dat-159-cloud-computing-l-7": [
+      "path---books-dat-159-iot-dat-159-cloud-computing-l-7-8557d77eb4f337486ac6.js",
+      "path---books-dat-159-iot-dat-159-cloud-computing-l-7-8557d77eb4f337486ac6.js.map"
+    ],
+    "path---books-dat-159-refactoring-refactoring-ch-6-and-ch-7-new": [
+      "path---books-dat-159-refactoring-refactoring-ch-6-and-ch-7-new-b18ed78c693bc6f466c7.js",
+      "path---books-dat-159-refactoring-refactoring-ch-6-and-ch-7-new-b18ed78c693bc6f466c7.js.map"
+    ],
+    "path---": [
+      "path----3704d11090bf364809ca.js",
+      "path----3704d11090bf364809ca.js.map"
+    ],
+    "path---books-dat-159-iot-security-and-privacy-grand-challenges-for-the-internet-of-things": [
+      "path---books-dat-159-iot-security-and-privacy-grand-challenges-for-the-internet-of-things-959dd4e96fe8d89e0173.js",
+      "path---books-dat-159-iot-security-and-privacy-grand-challenges-for-the-internet-of-things-959dd4e96fe8d89e0173.js.map"
+    ],
+    "path---books-dat-159-iot-dat-159-security-in-io-t-l-8": [
+      "path---books-dat-159-iot-dat-159-security-in-io-t-l-8-c843c62ac735365ce77d.js",
+      "path---books-dat-159-iot-dat-159-security-in-io-t-l-8-c843c62ac735365ce77d.js.map"
+    ],
+    "path---books-dat-159-refactoring-os-ecref-pdf": [
+      "path---books-dat-159-refactoring-os-ecref-pdf-c2b6f8b66332d4652986.js",
+      "path---books-dat-159-refactoring-os-ecref-pdf-c2b6f8b66332d4652986.js.map"
+    ],
+    "path---books-dat-159-iot-dat-159-l-04-io-t-protocols-r-5": [
+      "path---books-dat-159-iot-dat-159-l-04-io-t-protocols-r-5-564cf611023d35665535.js",
+      "path---books-dat-159-iot-dat-159-l-04-io-t-protocols-r-5-564cf611023d35665535.js.map"
+    ],
+    "component---src-templates-view-book-js": [
+      "component---src-templates-view-book-js-8a17c3768b7905be9d79.js",
+      "component---src-templates-view-book-js-8a17c3768b7905be9d79.js.map"
+    ],
+    "path---books-dat-159-blockchain-l-16-bitcoin-mechanics-1": [
+      "path---books-dat-159-blockchain-l-16-bitcoin-mechanics-1-9f8d1efd3540e0d3cdc4.js",
+      "path---books-dat-159-blockchain-l-16-bitcoin-mechanics-1-9f8d1efd3540e0d3cdc4.js.map"
+    ],
+    "path---books-dat-159-blockchain-l-18-applications-and-ecosystem": [
+      "path---books-dat-159-blockchain-l-18-applications-and-ecosystem-b17dc79f70b1e518cf17.js",
+      "path---books-dat-159-blockchain-l-18-applications-and-ecosystem-b17dc79f70b1e518cf17.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-8561e51b69bb000f13b4.js",
+      "component---src-layouts-index-js-8561e51b69bb000f13b4.js.map"
+    ],
+    "path---books-dat-159-iot-the-malicious-use-of-artificial-intelligence-forecasting-prevention-and-mitigation": [
+      "path---books-dat-159-iot-the-malicious-use-of-artificial-intelligence-forecasting-prevention-and-mitigation-09a42bf0c607e3b7e397.js",
+      "path---books-dat-159-iot-the-malicious-use-of-artificial-intelligence-forecasting-prevention-and-mitigation-09a42bf0c607e3b7e397.js.map"
+    ],
+    "path---books-dat-159-blockchain-l-19-smart-contracts-scalability-solutions": [
+      "path---books-dat-159-blockchain-l-19-smart-contracts-scalability-solutions-b6dbf95875708a9238da.js",
+      "path---books-dat-159-blockchain-l-19-smart-contracts-scalability-solutions-b6dbf95875708a9238da.js.map"
+    ],
+    "path---books-dat-159-cryptography-classical-cryptography-lecture": [
+      "path---books-dat-159-cryptography-classical-cryptography-lecture-125c6da0e688d1fb6fcd.js",
+      "path---books-dat-159-cryptography-classical-cryptography-lecture-125c6da0e688d1fb6fcd.js.map"
+    ],
+    "path---index": [
+      "path---index-0dcf0effb46cd93d812d.js",
+      "path---index-0dcf0effb46cd93d812d.js.map"
+    ],
+    "path---books-dat-159-cryptography-symmetric-cryptography-part-1": [
+      "path---books-dat-159-cryptography-symmetric-cryptography-part-1-46efbeafd7dd9a40eaba.js",
+      "path---books-dat-159-cryptography-symmetric-cryptography-part-1-46efbeafd7dd9a40eaba.js.map"
+    ],
+    "component---src-pages-my-files-js": [
+      "component---src-pages-my-files-js-42f57283ff14125deb28.js",
+      "component---src-pages-my-files-js-42f57283ff14125deb28.js.map"
+    ],
+    "path---my-files": [
+      "path---my-files-0244e3984c726289a1f5.js",
+      "path---my-files-0244e3984c726289a1f5.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "path---books-dat-159-cryptography-pki-crypto-in-blockchain": [
+      "path---books-dat-159-cryptography-pki-crypto-in-blockchain-ff49851855ecfbd5f29f.js",
+      "path---books-dat-159-cryptography-pki-crypto-in-blockchain-ff49851855ecfbd5f29f.js.map"
+    ],
+    "path---books-dat-159-cryptography-symmetric-cryptography": [
+      "path---books-dat-159-cryptography-symmetric-cryptography-49ee23ca34fe42453c06.js",
+      "path---books-dat-159-cryptography-symmetric-cryptography-49ee23ca34fe42453c06.js.map"
+    ],
+    "commons": [
+      "commons-5970e3e1a116a960eb22.js",
+      "build-js-styles.css",
+      "commons-5970e3e1a116a960eb22.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---books-dat-159-cryptography-asymmetric-cryptography": [
+      "path---books-dat-159-cryptography-asymmetric-cryptography-14e1728fd35d233eb235.js",
+      "path---books-dat-159-cryptography-asymmetric-cryptography-14e1728fd35d233eb235.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---books-dat-159-iot-io-t-security-ongoing-challenges-and-research-opportunities": [
+      "path---books-dat-159-iot-io-t-security-ongoing-challenges-and-research-opportunities-0ae012a79bedd05c7e6c.js",
+      "path---books-dat-159-iot-io-t-security-ongoing-challenges-and-research-opportunities-0ae012a79bedd05c7e6c.js.map"
+    ],
+    "path---books-dat-159-iot-cloud-computing-security-a-survey": [
+      "path---books-dat-159-iot-cloud-computing-security-a-survey-f2796cec31387d3f122b.js",
+      "path---books-dat-159-iot-cloud-computing-security-a-survey-f2796cec31387d3f122b.js.map"
+    ],
+    "path---books-dat-159-blockchain-l-15-distributed-consensus": [
+      "path---books-dat-159-blockchain-l-15-distributed-consensus-dc64d7ad20b456e761a7.js",
+      "path---books-dat-159-blockchain-l-15-distributed-consensus-dc64d7ad20b456e761a7.js.map"
+    ],
+    "path---books-dat-159-cryptography-digital-signature-hashing": [
+      "path---books-dat-159-cryptography-digital-signature-hashing-fc511af9df9e598cece7.js",
+      "path---books-dat-159-cryptography-digital-signature-hashing-fc511af9df9e598cece7.js.map"
+    ],
+    "path---books-l-14-introduction-to-blockchain-and-bitcoin": [
+      "path---books-l-14-introduction-to-blockchain-and-bitcoin-cf8db2794896b98da51b.js",
+      "path---books-l-14-introduction-to-blockchain-and-bitcoin-cf8db2794896b98da51b.js.map"
+    ],
+    "path---books-dat-159-blockchain-l-17-bitcoin-mechanics-2": [
+      "path---books-dat-159-blockchain-l-17-bitcoin-mechanics-2-9a7a58220faa7122aea5.js",
+      "path---books-dat-159-blockchain-l-17-bitcoin-mechanics-2-9a7a58220faa7122aea5.js.map"
+    ],
+    "app": [
+      "app-dc3b10d9daf9248c9bdf.js",
+      "build-js-styles.css",
+      "app-dc3b10d9daf9248c9bdf.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---books-dat-159-blockchain-l-14-introduction-to-blockchain-and-bitcoin": [
+      "path---books-dat-159-blockchain-l-14-introduction-to-blockchain-and-bitcoin-208a8b237caf1a201b21.js",
+      "path---books-dat-159-blockchain-l-14-introduction-to-blockchain-and-bitcoin-208a8b237caf1a201b21.js.map"
+    ],
+    "path---books-dat-159-cryptography-paper-pki": [
+      "path---books-dat-159-cryptography-paper-pki-241499c3489f7b338ecb.js",
+      "path---books-dat-159-cryptography-paper-pki-241499c3489f7b338ecb.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---books-dat-159-refactoring-ribeiro-ifdefs": [
+      "path---books-dat-159-refactoring-ribeiro-ifdefs-f0b8691e41c2c9131ff3.js",
+      "path---books-dat-159-refactoring-ribeiro-ifdefs-f0b8691e41c2c9131ff3.js.map"
+    ],
+    "path---books-dat-159-cryptography-dat-159-cryptography-intro-200818": [
+      "path---books-dat-159-cryptography-dat-159-cryptography-intro-200818-9e792b7582bb23082a74.js",
+      "path---books-dat-159-cryptography-dat-159-cryptography-intro-200818-9e792b7582bb23082a74.js.map"
+    ]
+  }
+}
