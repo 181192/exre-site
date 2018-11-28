@@ -1,9 +1,10 @@
 module.exports = {
-  pathPrefix: `/`,
+  pathPrefix: `/exre-site`,
   siteMetadata: {
     title: `Exam Resources`
   },
   plugins: [
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
