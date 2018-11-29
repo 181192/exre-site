@@ -25,6 +25,30 @@ module.exports = {
         source: `${__dirname}/src/pages/books`,
         destination: "/pdf"
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "EXPR",
+        short_name: "EXPR",
+        icons: [
+          {
+            src: "favicons/android-chrome-192x192.png",
+            sizes: "192x192",
+            type: "image/png"
+          },
+          {
+            src: "favicons/android-chrome-384x384.png",
+            sizes: "384x384",
+            type: "image/png"
+          }
+        ],
+        theme_color: "#5271ff",
+        background_color: "#5271ff",
+        start_url: "https://181192.github.io/exre-site/",
+        display: "standalone"
+      }
+    },
+    `gatsby-plugin-offline`
   ]
 };
