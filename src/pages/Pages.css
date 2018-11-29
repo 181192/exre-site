@@ -1,4 +1,4 @@
-@import '../layouts/variables.css';
+@import "../components/Layout/variables.css";
 
 .info-bar {
   border-bottom: 1px solid var(--colorDivider);
@@ -24,16 +24,16 @@
   border-radius: 3px;
   outline: none;
   transition: visibility 0s, width 0.1s ease-out;
+}
 
-  &:focus {
-    border-color: var(--colorRed);
-    transition: visibility 1s, width 0.1s ease-out;
-  }
+.search-input:focus {
+  border-color: var(--colorRed);
+  transition: visibility 1s, width 0.1s ease-out;
+}
 
-  &.hidden {
-    visibility: hidden;
-    width: 0px;
-  }
+.search-input > .hidden {
+  visibility: hidden;
+  width: 0px;
 }
 
 .search-button {
@@ -62,10 +62,10 @@
 .book-link {
   float: left;
   text-decoration: none;
+}
 
-  &:hover h3 {
-    color: var(--colorRed);
-  }
+.book-link:hover h3 {
+  color: var(--colorRed);
 }
 
 .book-link h3 {
@@ -76,14 +76,14 @@
   margin: 20px 0;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
+}
 
-  &:last-child {
-    border-bottom: none;
-  }
+.book:last-child {
+  border-bottom: none;
+}
 
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
+.book:after {
+  content: "";
+  display: block;
+  clear: both;
 }

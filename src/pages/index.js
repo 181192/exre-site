@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import classNames from 'classnames'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 
-import * as styles from './Pages.css'
+import './Pages.css'
 
 class IndexPage extends Component {
   constructor(props) {
@@ -46,41 +48,43 @@ class IndexPage extends Component {
     })
 
     return (
-      <div>
-        <div className="info-bar">
-          <h4 className="book-count">{books.length} Books</h4>
+      <Layout location={location}>
+        <div>
+          <div className="info-bar">
+            <h4 className="book-count">{books.length} Books</h4>
 
-          <form className="search-form">
-            <a href="#" className="search-button" onClick={this.toggleSearch}>
-              &#128269;
-            </a>
+            <form className="search-form">
+              <a href="#" className="search-button" onClick={this.toggleSearch}>
+                &#128269;
+              </a>
 
-            <input
-              type="search"
-              value={this.state.searchQuery}
-              className={inputClasses}
-              placeholder="Book title..."
-              onChange={this.search}
-            />
-          </form>
-        </div>
-
-        {books.map(({ node }) => (
-          <div key={node.id} className="book">
-            <Link className="book-link" to={node.path}>
-              <h3>{node.title}</h3>
-            </Link>
-
-            <div className="book-info">
-              <span className="info">{node.author}</span>
-
-              {node.pageCount && (
-                <span className="info">{node.pageCount} pages</span>
-              )}
-            </div>
+              <input
+                type="search"
+                value={this.state.searchQuery}
+                className={inputClasses}
+                placeholder="Book title..."
+                onChange={this.search}
+              />
+            </form>
           </div>
-        ))}
-      </div>
+
+          {books.map(({ node }) => (
+            <div key={node.id} className="book">
+              <Link className="book-link" to={node.path}>
+                <h3>{node.title}</h3>
+              </Link>
+
+              <div className="book-info">
+                <span className="info">{node.author}</span>
+
+                {node.pageCount && (
+                  <span className="info">{node.pageCount} pages</span>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Layout>
     )
   }
 }

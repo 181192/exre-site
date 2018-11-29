@@ -1,4 +1,4 @@
-@import '../layouts/variables.css';
+@import "../components/Layout/variables.css";
 
 .author {
   color: var(--colorMuted);
@@ -13,7 +13,7 @@
   padding: 10px 0;
 }
 
-.controls-right  button {
+.controls-right button {
   margin-left: 5px;
 }
 
@@ -33,7 +33,7 @@
 .book-view.fullscreen {
   width: var(--pageWidth);
   position: absolute;
-  top: 0; 
+  top: 0;
   background: var(--backgroundColor);
 }
 

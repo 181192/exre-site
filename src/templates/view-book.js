@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import PDFJS from 'pdfjs-dist'
 import classNames from 'classnames'
+import { graphql } from 'gatsby'
 
-import * as styles from './ViewBook.css'
+import './ViewBook.css'
 
 if (typeof window !== 'undefined') {
   window.PDFJS = PDFJS
