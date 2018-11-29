@@ -1,2 +1,0 @@
-webpackJsonp([1850817323532],{387:function(t,a){t.exports={data:{book:{id:"/home/travis/build/181192/exre-site/src/pages/books/dat159/iot/06816509.pdf absPath of file [4f15ad3d54566a3b8fd12218a42446fb] >>> pdf",title:"untitled",author:"Unknown",pageCount:"5",downloadPath:"/exre-site/pdf/dat159/iot/06816509.pdf",fingerprint:"4f15ad3d54566a3b8fd12218a42446fb"}},pathContext:{path:"/books/dat159/iot/06816509/"}}}});
-//# sourceMappingURL=path---books-dat-159-iot-06816509-d1c1c7a8905e8746fb8e.js.map

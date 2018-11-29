@@ -1,2 +1,0 @@
-webpackJsonp([0xde54bc30bb12],{383:function(p,a){p.exports={data:{book:{id:"/home/travis/build/181192/exre-site/src/pages/books/dat159/cryptography/paper-pki.pdf absPath of file [b269ed8f8d7698630a42387e54a2004b] >>> pdf",title:"10 Risks of PKI ",author:"Unknown",pageCount:"8",downloadPath:"/exre-site/pdf/dat159/cryptography/paper-pki.pdf",fingerprint:"b269ed8f8d7698630a42387e54a2004b"}},pathContext:{path:"/books/dat159/cryptography/paper-pki/"}}}});
-//# sourceMappingURL=path---books-dat-159-cryptography-paper-pki-0840a80a5fbd176f92e0.js.map
