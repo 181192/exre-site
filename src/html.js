@@ -1,31 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import ogImage from "../static/default-ogimage.png";
+import ogImage from "../static/default-ogimage.jpg";
 import favicon from "../static/favicon.ico";
 
-let stylesStr;
-if (process.env.NODE_ENV === `production`) {
-  try {
-    stylesStr = require(`!raw-loader!../public/styles.css`);
-  } catch (e) {
-    console.log(e);
-  }
-}
-
-module.exports = class HTML extends React.Component {
+export default class HTML extends React.Component {
   render() {
-    let css;
-    if (process.env.NODE_ENV === `production`) {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
-        />
-      );
-    }
     return (
-      <html {...this.props.htmlAttributes}>
+      <html {...this.props.htmlAttributes} lang="en">
         <Helmet
           title={`ExRe - Exam Resources 2018`}
           meta={[
@@ -57,7 +39,6 @@ module.exports = class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
-          {css}
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -71,7 +52,7 @@ module.exports = class HTML extends React.Component {
       </html>
     );
   }
-};
+}
 
 HTML.propTypes = {
   htmlAttributes: PropTypes.object,
