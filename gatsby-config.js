@@ -4,7 +4,7 @@ module.exports = {
     title: `Exam Resources`
   },
   plugins: [
-
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,10 +20,10 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-copy-files',
+      resolve: "gatsby-plugin-copy-files",
       options: {
         source: `${__dirname}/src/pages/books`,
-        destination: '/pdf'
+        destination: "/pdf"
       }
     }
   ]
