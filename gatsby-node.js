@@ -5,8 +5,8 @@ const pdfExtract = new PDFExtract();
 const fs = require("fs");
 PDFJS.verbosity = PDFJS.VERBOSITY_LEVELS.errors;
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNode, createParentChildLink } = boundActionCreators;
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNode, createParentChildLink } = actions;
 
   if (node.internal.mediaType === `application/pdf`) {
     const path = createFilePath({ node, getNode, basePath: `pages` });
@@ -54,38 +54,33 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   }
 };
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
-  return new Promise((resolve, reject) => {
-    const viewBook = path.resolve("./src/templates/view-book.js");
-    resolve(
-      graphql(
-        `
-          {
-            allBook(limit: 1000) {
-              edges {
-                node {
-                  path
-                }
-              }
-            }
+  const viewBook = path.resolve("src/templates/view-book.js");
+
+  return graphql(`
+    {
+      allBook(limit: 1000) {
+        edges {
+          node {
+            path
           }
-        `
-      ).then(result => {
-        if (result.errors) {
-          console.log(result.errors);
-          reject(result.errors);
         }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      console.log(result.errors);
+      return Promise.reject(result.errors);
+    }
 
-        // Create blog posts pages.
-        result.data.allBook.edges.forEach(edge => {
-          createPage({
-            path: edge.node.path,
-            component: viewBook
-          });
-        });
-      })
-    );
+    // Create blog posts pages.
+    result.data.allBook.edges.forEach(({ node }) => {
+      createPage({
+        path: node.path,
+        component: viewBook
+      });
+    });
   });
 };
