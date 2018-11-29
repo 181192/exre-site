@@ -1,54 +1,54 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import classNames from 'classnames'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import React, { Component } from "react";
+import Link from "gatsby-link";
+import classNames from "classnames";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
 
-import './Pages.css'
+import "./Pages.css";
 
 class IndexPage extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
-      searchQuery: '',
-      searchOpen: false,
-    }
+      searchQuery: "",
+      searchOpen: false
+    };
 
-    this.toggleSearch = this.toggleSearch.bind(this)
-    this.search = this.search.bind(this)
+    this.toggleSearch = this.toggleSearch.bind(this);
+    this.search = this.search.bind(this);
   }
 
   toggleSearch(event) {
-    event.preventDefault()
+    event.preventDefault();
 
-    this.setState({ searchOpen: !this.state.searchOpen })
+    this.setState({ searchOpen: !this.state.searchOpen });
   }
 
   search(event) {
-    this.setState({ searchQuery: event.currentTarget.value })
+    this.setState({ searchQuery: event.currentTarget.value });
   }
 
   books(allBook) {
     return allBook.edges.filter(node =>
       node.node.title.match(new RegExp(`${this.state.searchQuery}`))
-    )
+    );
   }
 
   render() {
-    const inputClasses = classNames('search-input', {
-      hidden: !this.state.searchOpen,
-    })
+    const inputClasses = classNames("search-input", {
+      hidden: !this.state.searchOpen
+    });
 
-    const { allBook } = this.props.data
+    const { allBook } = this.props.data;
 
     const books = allBook.edges.filter(book => {
-      const regex = new RegExp(`.*${this.state.searchQuery}.*`, 'i')
-      return book.node.title.match(regex)
-    })
+      const regex = new RegExp(`.*${this.state.searchQuery}.*`, "i");
+      return book.node.title.match(regex);
+    });
 
     return (
-      <Layout location={location}>
+      <Layout>
         <div>
           <div className="info-bar">
             <h4 className="book-count">{books.length} Books</h4>
@@ -85,11 +85,11 @@ class IndexPage extends Component {
           ))}
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default IndexPage
+export default IndexPage;
 
 export const query = graphql`
   query IndexQuery {
@@ -106,4 +106,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
